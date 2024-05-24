@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.date-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.date-inputs div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-inputs label {
+  color: #333; /* Set color for the labels */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.historical-weather-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.weather-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  flex: 0 0 auto;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333; /* Change text color to dark grey for better visibility */
+}
+
+.weather-card p {
+  margin: 5px 0;
+}
+
+.loading {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+
+
+  

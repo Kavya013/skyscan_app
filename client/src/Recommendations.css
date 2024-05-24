@@ -1,0 +1,28 @@
+.recommendations {
+  margin-top: 20px;
+}
+
+.recommendations h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recommendation-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recommendation-item .icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #3498db;
+}
+
+.recommendation-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+  
