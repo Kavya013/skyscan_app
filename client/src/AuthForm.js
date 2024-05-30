@@ -22,7 +22,7 @@ const AuthForm = () => {
     const password = document.getElementById('signin-password').value;
 
     try {
-      const response = await axios.post('/api/login', { email, password });
+      const response = await axios.post('https://skyscan-app-9.onrender.com/login', { email, password });
       if (response.status === 200) {
         setUserId(response.data.userId);
         if (!response.data.preferencesSet) {
@@ -46,7 +46,7 @@ const AuthForm = () => {
     const password = document.getElementById('signup-password').value;
 
     try {
-      const response = await axios.post('/api/signup', { username, email, password });
+      const response = await axios.post('https://skyscan-app-9.onrender.com/signup', { username, email, password });
       if (response.status === 200) {
         toggleForm();
       }
@@ -61,7 +61,7 @@ const AuthForm = () => {
 
   const handleSetLocation = async () => {
     try {
-      const response = await axios.post('/api/preferences', { userId, defaultLocation, phoneNumber });
+      const response = await axios.post('https://skyscan-app-9.onrender.com/preferences', { userId, defaultLocation, phoneNumber });
       if (response.status === 200) {
         setShowPopup(false);
         navigate('/weather');
