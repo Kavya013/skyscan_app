@@ -84,7 +84,7 @@ function Weather() {
 
   return (
     <div className="container" style={{ backgroundImage: weatherData ? getBackgroundImage(weatherData.description) : 'url("/newbg.jpg")' }}>
-    <h1>WEATHER APP</h1>
+    <h1>SKY SCAN</h1>
     <div className="search-container">
       <input
         type="text"
