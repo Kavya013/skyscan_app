@@ -50,7 +50,7 @@ function HistoricalWeather() {
     console.log('Fetching weather for:', { city, start: formattedStartDate, end: formattedEndDate });
 
     try {
-      const response = await axios.get(`https://skyscan-app-9.onrender.com/historical-weather`, {
+      const response = await axios.get(`https://skyscan-app-9.onrender.com/api/historical-weather`, {
         params: {
           city: city,
           start: start,

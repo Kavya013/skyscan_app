@@ -14,7 +14,7 @@ function Weather() {
   const searchWeather = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(`https://skyscan-app-9.onrender.com/weather/${city}`);
+      const response = await axios.get(`https://skyscan-app-9.onrender.com/api/weather/${city}`);
       setWeatherData(response.data);
     } catch (error) {
       console.error('Error fetching weather data:', error);
@@ -39,7 +39,7 @@ function Weather() {
       setError(null);
       try {
         const encodedCity = encodeURIComponent(cityName);
-        const response = await axios.get(`https://skyscan-app-9.onrender.com/weather/${encodedCity}`);
+        const response = await axios.get(`https://skyscan-app-9.onrender.com/api/weather/${encodedCity}`);
         setWeatherData(response.data);
       } catch (error) {
         console.error('Error fetching weather data:', error);
